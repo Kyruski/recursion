@@ -6,7 +6,7 @@
 // But instead we're going to implement it from scratch:
 var getElementsByClassName = function(className) {
     let nodeList = [];
-    if (typeof className === 'string') { 
+    if (typeof className === 'string') { //setting up the logic/recursive input for following tries.
         if (document.body.classList.contains(className)) { nodeList.push(document.body); }
         className = [className, document.body]; 
     };
