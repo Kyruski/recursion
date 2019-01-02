@@ -18,7 +18,6 @@ var getElementsByClassName = function(className) {
         let childNodeList = getElementsByClassName([className[0], currentLocation[i]]);
         if (childNodeList !== null) { nodeList = [...nodeList, ...childNodeList]; };
     }
-    console.log(nodeList);
     return nodeList;
 };
 
